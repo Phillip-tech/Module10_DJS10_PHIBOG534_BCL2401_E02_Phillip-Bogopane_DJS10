@@ -10,7 +10,7 @@ const App = () => {
     const fetchPosts = async () => {
       try {
         setLoading(true);
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts?lang=en');
+        const response = await fetch('https://sjsonplaceholder.typicode.com/posts?lang=en');
         if (!response.ok) {
           throw new Error('Failed to fetch');
         
@@ -26,6 +26,13 @@ const App = () => {
       
     fetchPosts();
   }, []);
+
+
+  return (
+    <div>
+      {error ? (
+        <p className="error"><strong>{error}</strong></p>
+      ) : (
 
   
   
