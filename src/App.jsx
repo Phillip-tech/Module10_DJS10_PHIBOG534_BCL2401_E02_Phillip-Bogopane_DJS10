@@ -33,6 +33,8 @@ const App = () => {
       {error ? (
         <p className="error"><strong>{error}</strong></p>
       ) : (
-
   
-  
+        <h1>Posts</h1>
+        {loading ? (
+          <p className="loading">Loading...</p>
+        ) : (
