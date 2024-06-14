@@ -1,0 +1,62 @@
+
+/* Set global styles for the root element */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Define font families */
+  line-height: 1.5; /* Set line height */
+  font-weight: 400; /* Set font weight */
+
+  color-scheme: light dark; /* Define color scheme for light and dark modes */
+  color: rgba(255, 255, 255, 0.87); /* Set text color */
+  background-color: #242424; /* Set background color */
+
+  font-synthesis: none; /* Disable font synthesis */
+  text-rendering: optimizeLegibility; /* Optimize text rendering */
+  -webkit-font-smoothing: antialiased; /* Antialias text for webkit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Antialias text for Firefox on macOS */
+}
+
+/* Media query for light color scheme */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547; /* Set text color for light mode */
+    background-color: #ffffff; /* Set background color for light mode */
+  }
+}
+
+/* Global styles for body element */
+body {
+  margin: 0; /* Remove default margins */
+  display: flex; /* Use flexbox for layout */
+  place-items: center; /* Center contents vertically and horizontally */
+  min-width: 320px; /* Set minimum width */
+  min-height: 100vh; /* Set minimum height to full viewport height */
+  text-align: center; /* Center text */
+}
+
+/* Styles for unordered lists */
+ul {
+  list-style-type: none; /* Remove bullets from lists */
+}
+
+/* Styles for error class */
+.error {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center contents horizontally */
+  align-items: center; /* Center contents vertically */
+  flex-direction: column; /* Arrange children in a column */
+  height: 100vh; /* Set height to full viewport height */
+  margin: 0; /* Remove default margins */
+  font-size: 50px; /* Set font size */
+}
+
+/* Pseudo-element for error class */
+.error::before {
+  content: attr(data-text); /* Set content from data attribute */
+}
+
+/* Styles for loading class */
+.loading {
+  text-align: center; /* Center text horizontally */
+}
+
+
