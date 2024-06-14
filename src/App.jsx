@@ -22,5 +22,10 @@ const App = () => {
           setLoading(false);
         }
       };
+
+      
+    fetchPosts();
+  }, []);
+
   
   
